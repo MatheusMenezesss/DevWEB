@@ -1,0 +1,143 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e herói */
+.hero {
+    background-image: url(bg-4.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.hero nav li {
+    list-style: none;
+    margin-left: 15px;
+}
+
+.hero nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.hero nav a:hover,
+.hero nav a:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Conteúdo do herói */
+.hero-content h1 {
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Área principal */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+article {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+.linkA {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.linkA:hover,
+.linkA:focus {
+    background-color: #e0e0e0;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+}
